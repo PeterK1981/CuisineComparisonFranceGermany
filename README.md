@@ -17,7 +17,7 @@ I compared **macronutrient shares** (fat, carb, protein) of **main course** reci
   (“pp” = percentage points; numbers vary slightly with preprocessing.)
 * Interpretation: the *main-dish pattern* is **more unifying than dividing** in this corpus.
 
-![ILR figure placeholder](MainCourseRecipesTaggedFrenchGerman-gpp-ILR.png)
+![ILR figure placeholder](MainCourseRecipesTaggedFrenchGerman-gpp-ILR_se.png)
 
 ---
 
@@ -48,14 +48,14 @@ ast
 * **Preprocessing:** filter to *main course*; compute macro **shares** (by **mass** in this run; energy is available with minimal changes); **close** each row (sum = 1).
 * **Ternary plotting:** `mpltern` with 10% grid ticks, centroids (Aitchison means), and annotated **Δ-bands** along axes to show tiny per-component differences.
 * **Centroids:** component-wise **geometric means** per cuisine, then **closure** → compositional (Aitchison) mean.
-* **(Optional) ILR view:** map to ILR coordinates to visualize centroid shift and overlap in Euclidean space
+* **ILR view:** map to ILR coordinates to visualize centroid shift and overlap in Euclidean space
 
 ---
 
 ## Results (short)
 
 * **Large overlap** between “french” and “german” main-dish compositions.
-* **Small centroid shift** (example, gram shares): German − French ≈ **fat −2.9 pp**, **carbs +5.8 pp**, **protein −2.9 pp**.
+* **Small centroid shift** (example, gram shares): German − French ≈ **fat +2.8 pp**, **carbs -4.8 pp**, **protein +2.0 pp**.
 * Communicated as: *“similar overall; tiny, consistent difference.”*
 
 ---
@@ -66,6 +66,7 @@ ast
 * **User-generated tags** and platform bias; many recipes are localized or adapted.
 * **Nutrition** often derives from databases; rounding and DV baselines vary.
 * **Imbalanced counts** across cuisines
+* **Consistent with intake data** Findings of intake data for France and Germany shows a similar shift
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Skills used:** compositional data analysis (Aitchison geometry); ternary plotting with `mpltern`; Matplotlib styling & annotation; pandas data wrangling; Aitchison (compositional) centroids; ILR concepts (explained, used to compute centroids); reproducible notebooks; Git data hygiene (no raw data in repo).
 
-![Main findings](MainCourseRecipesTaggedFrenchGerman-gpp-centroids.png)
+![Main findings](MainDishes_byCuisine_simplified.png)
 
 
 ---
@@ -17,7 +17,7 @@ I compared **macronutrient shares** (fat, carb, protein) of **main course** reci
   (“pp” = percentage points; numbers vary slightly with preprocessing.)
 * Interpretation: the *main-dish pattern* is **more unifying than dividing** in this corpus.
 
-![ILR figure placeholder](MainCourseRecipesTaggedFrenchGerman-gpp-ILR_se.png)
+![ILR figure placeholder](MainDishes_byCuisine.png)
 
 ---
 

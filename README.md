@@ -2,7 +2,7 @@
 
 **Skills used:** compositional data analysis (Aitchison geometry); ternary plotting with `mpltern`; Matplotlib styling & annotation; pandas data wrangling; Aitchison (compositional) centroids; ILR concepts (explained, used to compute centroids); reproducible notebooks; Git data hygiene (no raw data in repo).
 
-![Main findings](MainDishes_byCuisine_simplified.png)
+![Main findings](exports/MainDishes_byCuisine_simplified.png)
 
 
 ---
@@ -17,7 +17,7 @@ I compared **macronutrient shares** (fat, carb, protein) of **main course** reci
   (“pp” = percentage points; numbers vary slightly with preprocessing.)
 * Interpretation: the *main-dish pattern* is **more unifying than dividing** in this corpus.
 
-![ILR figure placeholder](MainDishes_byCuisine.png)
+![ILR figure placeholder](exports/MainDishes_byCuisine.png)
 
 ---
 
@@ -28,6 +28,8 @@ Dataset: **Food.com Recipes and Interactions** by Shuyang Li on Kaggle.
 Files used
 
 * `RAW_recipes.csv` (primary; contains `tags` and `nutrition`)
+
+the required food.csv can be recreated with preprocessing.ipnyb
 
 ---
 
@@ -45,19 +47,20 @@ ast
 
 ## Methods
 
-* **Preprocessing:** filter to *main course*; compute macro **shares** (by **mass** in this run; energy is available with minimal changes); **close** each row (sum = 1).
-* **Ternary plotting:** `mpltern` with 10% grid ticks, centroids (Aitchison means), and annotated **Δ-bands** along axes to show tiny per-component differences.
+* **Preprocessing:** filter to *main course*; compute macro **shares** (by **mass** in this run; energy is available with minimal changes); **close** each row (sum = 1); compute isometric log ratio coordinates.
+* **Ternary plotting:** `mpltern` with 10% grid ticks.
 * **Centroids:** component-wise **geometric means** per cuisine, then **closure** → compositional (Aitchison) mean.
-* **ILR view:** map to ILR coordinates to visualize centroid shift and overlap in Euclidean space
 
 ---
 
 ## Results (short)
 
 * **Large overlap** between “french” and “german” main-dish compositions.
+* **Large general overlap** between international main-disch compositions, see image below.
 * **Small centroid shift** (example, gram shares): German − French ≈ **fat +2.8 pp**, **carbs -4.8 pp**, **protein +2.0 pp**.
 * Communicated as: *“similar overall; tiny, consistent difference.”*
 
+![Main-dish composition by tags](exports/MainDishes_byCuisine_selection_simplified.png)
 ---
 
 
